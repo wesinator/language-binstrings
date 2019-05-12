@@ -1,0 +1,31 @@
+'name': 'Binary strings (strings output)'
+'scopeName': 'source.binstrings'
+
+'fileTypes': [
+  'binstrings'
+]
+'patterns': [
+  {
+    # https://github.com/blacktop/language-yara/blob/7fb3d8db47fee6901031b3ad6a72175abb210195/grammars/yara.cson#L34
+    'match': '\\b(0(x|X)[0-9a-fA-F]+)(MB|KB)?\\b'
+    'name': 'constant.numeric.binstrings'
+  }
+  
+  {
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.binstrings'
+    'end': '"'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.binstrings'
+    'name': 'string.quoted.double.binstrings'
+    'patterns': [
+      {
+        'include': '#string_escaped_char'
+      }
+    ]
+  }
+]
+

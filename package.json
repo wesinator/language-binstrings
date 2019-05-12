@@ -1,0 +1,16 @@
+{
+  "name": "language-binstrings",
+  "version": "0.0.0",
+  "description": "Highlighting for strings output from a binary file.",
+  "keywords": [
+    "language",
+    "grammar",
+    "strings",
+    "binary"
+  ],
+  "repository": "https://github.com/wesinator/language-binstrings",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
