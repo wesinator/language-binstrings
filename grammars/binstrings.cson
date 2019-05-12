@@ -2,6 +2,7 @@
 'scopeName': 'source.binstrings'
 
 'fileTypes': [
+  'binstr'
   'binstrings'
 ]
 'patterns': [
