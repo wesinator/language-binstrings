@@ -4,6 +4,7 @@
 'fileTypes': [
   'binstr'
   'binstrings'
+  'memstr'
 ]
 'patterns': [
   {
