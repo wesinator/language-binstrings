@@ -14,6 +14,11 @@
   }
   
   {
+    'match': '\\b[a-zA-Z]:(\\\\.{0,256})+?\\b'
+    'name': 'string.filepath.windows.binstrings'
+  }
+  
+  {
     'begin': '"'
     'beginCaptures':
       '0':
