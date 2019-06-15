@@ -19,6 +19,17 @@
   }
   
   {
+    # adapted from https://github.com/snowydad/language-aliasworlds-ini/blob/aaa27851cf17c6bbbf9a2adb6c1bbdff9c0de22e/grammars/ini.cson#L81
+    'captures':
+      '1':
+        'name': 'markup.underline.link.http.hyperlink.binstrings'
+      '2':
+        'name': 'markup.underline.link.http.hyperlink.binstrings'
+    'match': '(http://|https://|ftp://|ftps://|sftp://|file://|smb://)(.*?)[\\s]*?$'
+    'name': 'string.uri.binstrings'
+  }
+  
+  {
     'begin': '"'
     'beginCaptures':
       '0':
@@ -35,4 +46,3 @@
     ]
   }
 ]
-
