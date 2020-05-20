@@ -5,6 +5,7 @@
   'binstr'
   'binstrings'
   'memstr'
+  'strings'
 ]
 'patterns': [
   {
@@ -12,12 +13,12 @@
     'match': '\\b(0(x|X)[0-9a-fA-F]+)(MB|KB)?\\b'
     'name': 'constant.numeric.binstrings'
   }
-  
+
   {
     'match': '\\b[a-zA-Z]:(\\\\.{0,256})+?'
     'name': 'string.filepath.windows.binstrings'
   }
-  
+
   {
     # adapted from https://github.com/snowydad/language-aliasworlds-ini/blob/aaa27851cf17c6bbbf9a2adb6c1bbdff9c0de22e/grammars/ini.cson#L81
     'captures':
@@ -28,7 +29,7 @@
     'match': '(http://|https://|ftp://|ftps://|sftp://|file://|smb://)(.*?)[\\s]*?$'
     'name': 'string.uri.binstrings'
   }
-  
+
   {
     'begin': '"'
     'beginCaptures':
