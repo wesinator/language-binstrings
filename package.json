@@ -1,6 +1,6 @@
 {
   "name": "language-binstrings",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Highlighting for strings output from a binary file. Interesting strings artifacts are highlighted for static code analysis",
   "keywords": [
     "language",
